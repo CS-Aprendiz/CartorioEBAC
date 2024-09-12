@@ -120,7 +120,8 @@ int main() //Função responsavel por abrir o menu de opções ao usuario
 	   printf("Escolha a opçao desejada no menu\n\n");
        printf("\t1 registrar nomes\n");
 	   printf("\t2 consultar nomes\n");
-	   printf("\t3 deletar nomes\n\n"); 
+	   printf("\t3 deletar nomes\n"); 
+	   printf("\t4 sair do sistema\n\n");
 	   printf("Opcao:");// fim do menu
 	
     	scanf("%d", &opcao); //armazenando e escolha do usuario
@@ -141,6 +142,12 @@ int main() //Função responsavel por abrir o menu de opções ao usuario
         	case 3:
         	deletar(); //chamada de funções
         	break;
+        	
+        	case 4:
+        	printf("Obrigado por utilizar nosso sistema!\n");
+        	return 0;
+        	break;
+        	
         	
         	default:
         	printf("Esta opçao nao esta disponivel!\n"); //Resposta ao usuario
